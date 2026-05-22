@@ -1,9 +1,9 @@
-name: CI Build
+name: CI workflow
 on:
   push:
-    branches: [ main, "claude/loving-keller-Eu5D3" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ main ]
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -25,4 +25,4 @@ jobs:
           flake8 service --count --max-complexity=10 --max-line-length=127 --statistics
 
       - name: Run unit tests with nose
-        run: nosetests
+        run: nosetests -v --with-spec --spec-color --with-coverage --cover-package=app
