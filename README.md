@@ -24,8 +24,18 @@ Then you must exit the shell and start a new one for the Python virtual environm
 exit
 ```
 
+## Project Name
+
+**ci-cd-final-project** — Final project for the Coursera course **CI/CD Tools and Practices** by IBM.
+
+This project implements a Python/Flask microservice with a complete CI/CD pipeline using:
+- **GitHub Actions** for automated lint (flake8) and unit tests (nosetests)
+- **Tekton** Pipelines for Kubernetes-native CI/CD
+
 ## Tasks
 
+- [x] Set up GitHub Actions workflow with flake8 linting and nosetests
+- [x] Set up Tekton tasks for cleanup and testing
 
 ## License
 
